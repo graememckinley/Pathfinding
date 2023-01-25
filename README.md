@@ -9,6 +9,12 @@ skeleton code for the `tiles` package and remaining `.java` files was provided.
 
 ## General
 
+The goal for this project was to become comfortable working with graphs as well as implementing algorithms for solving practical problems.
+The main task was to consider all the different elements like desert, mountains, etc. and devise a plan to travel from a starting location to a safe house.
+To achieve this, Dijkstra's algorithm was implemented to find the shortest distance path and the shortest time path,
+and the Lagrangian Relaxation Based Aggregated Cost (LARAC) algorithm was implemented to find the shortest distance path subject to a health constraint.
+In addition to this, waypoint setting and a metro system for faster travel were also provided.
+
 ### GUI
 * **Menu:** The menu provides ways to navigate through maps and supports functionalities to modify the GUI visula output.
   * Control: basic command to manipulate the map.
@@ -55,6 +61,14 @@ Each tile type has the following costs:
 | zombie ruins| 1 | 3 | 5 |
 
 Mountains are considered highly dangerous terrain and are not deemed "walkable".
+
+### Run & Simulation
+
+Run the `Main.java` file to bring up the GUI.
+In order to generate a path according to the options listed in the Command Panel, first select one of the four map options.
+Following this, any of the different traversals can be selected.
+No additional action is needed to generate a different traversal, simply click on the appropriate button.
+In order to simulate the path and visualize the course, press the simulation button from the Control Menu after generating a path successfully.
 
 ## Highlights
 
@@ -109,7 +123,7 @@ Metro tiles are only currently present in Map 3 and this implementation does not
 
 ### `SafestShortestPath.java`
 
-This class deals with implementation of the Lagrangian Relaxation Based Aggregated Cost algorithm (LARAC).
+This class deals with implementation of the LARAC algorithm.
 An explanation of the algorithm can be found [here](https://cs.ou.edu/~thulasi/Misc/AKCE%20October%2025.pdf).
 This implementation deals with finding the shortest path from the start to the destination that also has a damage cost less than our `health`
 (i.e. the shortest safest path).
