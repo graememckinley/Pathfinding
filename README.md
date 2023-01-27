@@ -7,7 +7,7 @@ This includes all code in the `.idea`, `out.production.finalproject.finalproject
 For grading purposes, and to ensure that all file, class, and core method names were the same for all students, 
 skeleton code for the `tiles` package and remaining `.java` files was provided.
 
-## General
+## Overview
 
 The goal for this project was to become comfortable working with graphs as well as implementing algorithms for solving practical problems.
 The main task was to consider all the different elements like desert, mountains, etc. and devise a plan to travel from a starting location to a safe house.
